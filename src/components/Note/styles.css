@@ -87,5 +87,9 @@
     .card-content{
         font-size: 0.8rem;
     }
-     
+    .color-picker-container{
+        top: -3.5rem;
+        right: -1rem;
+        padding: 0.5rem;
+    }
 }
