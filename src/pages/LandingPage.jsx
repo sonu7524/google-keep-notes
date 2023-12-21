@@ -9,7 +9,7 @@ export default function LandingPage() {
     const [filteredNotes, setFilteredNotes] = useState([]);
     useEffect(() => {
         const filterNotes = notes.filter((note) => {
-            return note.title.toLowerCase().includes(search.toLowerCase());
+            return note.title.toLowerCase().includes(search.toLowerCase()) || note.content.toLowerCase().includes(search.toLowerCase());
         })
         setFilteredNotes(filterNotes);
     }, [search]);
