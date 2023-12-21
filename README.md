@@ -1,7 +1,7 @@
 # Simple Google Keep Notes
 Notes making web service that allow user to keep their important stuffs using notes in order to remember later on.
 ![image](<Screenshot (15).png>)
-## Fectures
+## Features
 1. Add Notes
 2. Update Notes
 3. Highlight your particular notes using color picker
@@ -18,7 +18,7 @@ Notes making web service that allow user to keep their important stuffs using no
 ## How to setup the project?
 1. clone the repo in your local machine by applying below code in your terminal.
 ```
-git clone 
+git clone https://github.com/sonu7524/google-keep-notes.git
 ```
 
 2. Now setup the npm libraries.
