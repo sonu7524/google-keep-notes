@@ -14,7 +14,7 @@ export default function LandingPage() {
         setFilteredNotes(filterNotes);
     }, [search]);
     return (
-        <div>
+        <div className="landing-page">
             <Header setSearch={setSearch} />
             <MainPage notes={notes} filteredNotes={filteredNotes} setFilteredNotes={setFilteredNotes} setNotes={setNotes} />
         </div>
