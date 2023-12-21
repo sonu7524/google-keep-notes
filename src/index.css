@@ -1,0 +1,28 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --white: #fff;
+  --black: #000;
+  --bg:rgb(255, 247, 236);
+  --color1: #FAAFA8;
+  --color2: #F39F76;
+  --color3: #FFF8B8;
+  --color4: #E2F6D3;
+  --color5: #B4DDD3;
+  --color6: #D4E4ED;
+  --color7: #AECCDC;
+  --color8: #D3BFDB;
+  --color9: #F6E2DD;
+  --color10: #E9E3D4;
+  --color11: #EFEFF1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
