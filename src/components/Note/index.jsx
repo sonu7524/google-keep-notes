@@ -5,6 +5,7 @@ import './styles.css';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import { CirclePicker } from 'react-color';
 import SaveAsIcon from '@mui/icons-material/SaveAs';
+import Tooltip from '@mui/material/Tooltip';
 
 function Note(props) {
   const [color, setColor] = useState(props.color);
@@ -15,11 +16,7 @@ function Note(props) {
   const contentAreaRef = useRef();
 
   useEffect(() => {
-    if (props.onChangeColor) {
-      props.onChangeColor(props.id, color);
-    } else {
-      console.error("onChangeColor is not defined");
-    }
+    props.onChangeColor(props.id, color);
   }, [color, props.id]);
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
@@ -80,19 +77,27 @@ function Note(props) {
       )}
       <div className="card-footer">
         <div className="color-picker" onClick={handleColorPickerClick}>
-          <ColorLensIcon />
+          <Tooltip title="Color Picker">
+            <ColorLensIcon />
+          </Tooltip>
         </div>
         <button className="delete" onClick={handleClick}>
-          <DeleteIcon />
+          <Tooltip title="Delete">
+            <DeleteIcon />
+          </Tooltip>
         </button>
         {!isEditing && (
           <button style={{ background: 'transparent' }} className="edit" onClick={handleEditClick}>
-            <EditIcon />
+            <Tooltip title="Edit Notes">
+              <EditIcon />
+            </Tooltip>
           </button>
         )}
         {isEditing && (
           <button style={{ background: 'transparent' }} className="save" onClick={handleSaveClick}>
-            <SaveAsIcon />
+            <Tooltip title="Save">
+              <SaveAsIcon />
+            </Tooltip>
           </button>
         )}
       </div>
