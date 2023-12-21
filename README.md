@@ -1,7 +1,7 @@
 # Simple Google Keep Notes
 Notes making web service that allow user to keep their important stuffs using notes in order to remember later on.
 ![image](<Screenshot (15).png>)
-## Fectures
+## Features
 1. Add Notes
 2. Update Notes
 3. Highlight your particular notes using color picker
