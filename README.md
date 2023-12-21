@@ -18,7 +18,7 @@ Notes making web service that allow user to keep their important stuffs using no
 ## How to setup the project?
 1. clone the repo in your local machine by applying below code in your terminal.
 ```
-git clone 
+git clone https://github.com/sonu7524/google-keep-notes.git
 ```
 
 2. Now setup the npm libraries.
