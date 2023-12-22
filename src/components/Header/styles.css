@@ -29,6 +29,7 @@ header{
 .search-icon{
     position: absolute;
     left: 1rem;
+    top: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,11 +44,12 @@ header{
     }
     .search-input{
         width: 10rem;
+        padding-left: 2.5rem;
         font-size: 0.8rem;
         border-radius: 2px;
     }
-    .search-btn{
-        padding: 0.1rem 0.5rem;
-        border-radius: 3px;
+    .search-icon{
+        left: 0.8rem;
+        top: 0.5rem;
     }
 }

@@ -14,7 +14,7 @@ function Header({setSearch}) {
                 <h1>KEEP NOTES</h1>
             </div>
             <div className="header-search">
-                <div className="search-icon"><SearchIcon /></div>
+                <div className="search-icon"><SearchIcon sx={{ color: 'grey' }} /></div>
                 <input className="search-input" type="text" placeholder="Search" onChange={(event) => setSearchInput(event.target.value)} value={searchInput} onKeyUp={handleSearch} />
             </div>
         </header>
