@@ -56,6 +56,8 @@ export default function MainPage({notes, setNotes, filteredNotes, setFilteredNot
   return (
     <div className="main">
       <ContentArea addNote={addNote} />
+      {notes.length === 0 && <p className="no-notes">Add a note here!!!</p>}
+      {notes.length !== 0 && filteredNotes.length === 0 && <p className="no-notes">No notes found</p>}
       {filteredNotes ? (
         filteredNotes.map((noteItem) => (
           <Note

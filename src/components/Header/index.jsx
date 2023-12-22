@@ -4,9 +4,8 @@ import './styles.css'
 
 function Header({setSearch}) {
     let[searchInput, setSearchInput] = useState('');
-    const handleSearchBtn = () => {
+    const handleSearch = () => {
         setSearch(searchInput);
-        setSearchInput('');
     }
     return (
         <header>
@@ -15,8 +14,8 @@ function Header({setSearch}) {
                 <h1>KEEP NOTES</h1>
             </div>
             <div className="header-search">
-                <input className="search-input" type="text" placeholder="Search" onChange={(e) => setSearchInput(e.target.value)} />
-                <button onClick={handleSearchBtn} className="search-btn"><SearchIcon /></button>
+                <div className="search-icon"><SearchIcon /></div>
+                <input className="search-input" type="text" placeholder="Search" onChange={(event) => setSearchInput(event.target.value)} value={searchInput} onKeyUp={handleSearch} />
             </div>
         </header>
     )
